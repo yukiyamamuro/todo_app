@@ -12,6 +12,7 @@ class Task
         title: title,
       })
 
+      puts '===========レスポンスを送った==============='
       res = stub.create_todo(req)
       puts '===========レスポンスが返ってきた==========='
       puts res.task_id
