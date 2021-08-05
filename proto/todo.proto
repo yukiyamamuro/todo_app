@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package todo;
+
+option go_package = "gen/api";
+
+service TodoService {
+  rpc CreateTodo(CreateTaskRequest) returns (CreateTaskResponse);
+}
+
+message CreateTaskRequest{
+  string title = 1;
+}
+
+message CreateTaskResponse{
+  float task_id = 1;
+}
