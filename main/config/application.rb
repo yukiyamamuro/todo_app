@@ -18,5 +18,6 @@ module Main
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+    config.paths.add Rails.root.join('app/gen/api/todo').to_s, eager_load: true
   end
 end
