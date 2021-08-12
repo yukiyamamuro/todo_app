@@ -9,7 +9,7 @@ class Task
   class << self
     def create_todo_task(title)
       req = Todo::CreateTaskRequest.new({
-        title: title,
+        title: title
       })
 
       puts '===========レスポンスを送った==============='
@@ -23,6 +23,7 @@ class Task
     end
 
     def stub
-      Todo::TodoService::Stub.new(config_dsn, :this_cannel_is_insecure)
+      Todo::TodoService::Stub.new(config_dsn, :this_channel_is_insecure)
     end
+  end
 end
