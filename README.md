@@ -1,7 +1,7 @@
 ## Todoアプリ
 ```
-Client: rails
-API: go
+Client: rails6.1.4, ruby2.7.2
+API: go1.16.5
 Protocol: gRPC
 ```
 
